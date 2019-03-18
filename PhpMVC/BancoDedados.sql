@@ -1,0 +1,1 @@
+Cole aqui os scripts de banco pro professor rodar se necessario mude o arqivop para .php
