@@ -10,4 +10,5 @@ class CadastroController extends Controller
     {
         $this->render('cadastro/Cadastro');
     }
+///teste
 }
