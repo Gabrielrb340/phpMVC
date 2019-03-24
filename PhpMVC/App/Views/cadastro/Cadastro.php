@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="<?php echo HOME;?>/public/css/main.css" rel="stylesheet" type="text/css">
-
+  
 	<script src="<?php echo HOME; ?>/public/js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="<?php echo HOME; ?>/public/js/jquery.validate.min.js"type="text/javascript"></script>
 	<script src="<?php echo HOME;?>/public/js/validacao.js" type="text/javascript"></script>
