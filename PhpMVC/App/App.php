@@ -19,12 +19,12 @@ class App
         <link href="<?php echo CSSGloval;?>/Nomearquivo.css" rel="stylesheet" type="text/css">
 
         */
-        define('CSSGLOBAL' ,'../../../phpMVC/public/css');
+        define('CSSGLOBAL' ,'../../../phpMVC/PhpMVC/public/css');
         /// caminho  pasta main do projeto OBS contando que esteja dentro de c/xamp/hdocs
         // nsei no mac configura ai
-        define('HOME' ,"../../../phpMVC");
+        define('HOME' ,"../../../phpMVC/PhpMVC");
         // quase a mesma coisa do de cima
-        define('APP_HOST'       , $_SERVER['HTTP_HOST'] . "/phpMVC");
+        define('APP_HOST'       , $_SERVER['HTTP_HOST'] . "/phpMVC/PhpMVC");
         define('PATH'           , realpath('./'));
         define('TITLE'          , "teste");
         define('DB_HOST'        , "localhost");
