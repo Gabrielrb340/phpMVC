@@ -84,6 +84,7 @@
             <div class="form-group col-md-14">
             <input type="number"class="form-control" id="tel" name="tel" placeholder="Telefone" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" onkeyup="limitarInput(this)">
             </div>
+            
 
           <div class="form-group col-md-14">
             <select class="form-control" id="setor">
