@@ -1,2 +1,0 @@
-crie aqui suas conexoes com banco cada entidade tem que ter seu propio repository
-e o repository herda da class conexao na pasta lib
