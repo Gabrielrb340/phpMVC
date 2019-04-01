@@ -19,12 +19,14 @@ class Conexao
 
         try { 
             if(!isset($connection)){
-                $connection =  new PDO($pdoConfig, DB_USER, DB_PASSWORD);
+                $connection =  new PDO($pdoConfig, DB_USER, DB_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
                 $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }
             return $connection;
         } catch (PDOException $e) {
-            throw new Exception("Erro de conexão com o banco de dados",500);
+            throw new Exception("Erro de conexão com o banco de dados",$e);
+            // throw new Exception("Erro de conexão com o banco de dados",500);
+
         }
     }
 }

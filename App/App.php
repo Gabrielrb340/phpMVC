@@ -32,7 +32,7 @@ class App
         define('DB_HOST'        , "localhost");
         define('DB_USER'        , "root");
         define('DB_PASSWORD'    , "");
-        define('DB_NAME'        , "teste");
+        define('DB_NAME'        , "npaluno");
         // se n funcionar mysql poe PDO
         define('DB_DRIVER'      , "mysql");
 
