@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\DAO;
+namespace App\Models\Repository\UsuarioRepository;
 
 use App\Lib\Conexao;
 
@@ -37,5 +37,13 @@ abstract class RepositoryBase
         }else{
             return false;
         }
+    }
+
+    /**
+     * Get the value of conexao
+     */ 
+    public function getConexao()
+    {
+        return $this->conexao;
     }
 }

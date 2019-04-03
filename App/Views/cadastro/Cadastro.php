@@ -27,26 +27,29 @@
       <title>cadastro</title>
    </head>
    <body>
+   <?php if($Sessao::retornaMensagem()){ ?>
+                <div class="alert alert-warning" role="alert"><?php echo $Sessao::retornaMensagem(); ?></div>
+            <?php } ?>
       <div class="container vertical-center col-12 " >
          <div class="card centerx1 border-primary ">
             <img src="<?php echo APP_HOST; ?>\public\Icons\imgcad.png" class="card-top" style="max-height: 300px; max-width: 300px;">
-            <form >
+            <form action="<?php echo APP_HOST; ?>/cadastro/cadastrar" method="post" id="form_cadastro">
                <div class="form-group col-md-12">
                   <label for="inputEmail4">Nome</label>
-                  <input type="text" class="form-control" id="nome" placeholder="Nome de usuario">
+                  <input type="text" class="form-control"  name="nome" id="nome" placeholder="Nome de usuario" value="<?php echo $Sessao::retornaValorFormulario('nome');?>">
                </div>
                <div class="form-group col-md-12">
                   <label for="inputPassword4">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" value="<?php echo $Sessao::retornaValorFormulario('email');?>">
                </div>
                <div class="form-group col-md-12">
                   <label for="inputEmail4">Senha</label>
-                  <input type="password" class="form-control" id="pass" placeholder="Senha" onkeyup=" return ValidarIgualdadeForm()">
+                  <input type="password" class="form-control" name="senha" id="pass" placeholder="Senha">
                   <div id="messagem"></div>
                </div>
                <div class="form-group col-md-12">
                   <label for="inputPassword4">Confirme sua senha</label>
-                  <input type="password" class="form-control" id="cpass" placeholder="Digite sua senha novamente">
+                  <input type="password" class="form-control" id="cpass" value="<?php echo $Sessao::retornaValorFormulario('senha');?>">
                   <p><span class="emsg hidden">Senhas Divergentes</span></p>
                </div>
                <div class="form-group">

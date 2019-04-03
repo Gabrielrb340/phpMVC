@@ -64,7 +64,7 @@
                                     <button type="submit" class="btn">ENTRAR</button>
                                 
                                     <div class="col-6" style="padding-left: 195px">
-                                        <input class="btn btn-light" name="Criar conta" type="button" onClick="window.open('http://localhost/Npalunos2/cadastro-view/telacadastroprof.php')" value="Criar conta">
+                                        <input class="btn btn-light" name="Criar conta" type="button" onClick="window.open('<?php echo APP_HOST;?>/cadastro/index')" value="Criar conta">
 
 			                    </form>
 		                    </div>
